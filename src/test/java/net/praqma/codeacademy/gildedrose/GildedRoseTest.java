@@ -18,6 +18,6 @@ public class GildedRoseTest {
         Item[] items = new Item[] { new Item("Aged Brie", 0, 5) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals(6, app.items[0].quality);	
+        assertEquals(7, app.items[0].quality);	
     }    
 }
