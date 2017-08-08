@@ -11,7 +11,13 @@ public class GildedRoseTest {
         Item[] items = new Item[] { new Item("foo", 0, 0) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals("foo", app.items[0].name);
+        assertEquals("foo", app.items[0].name);	
     }
-
+    @Test
+    public void too() {
+        Item[] items = new Item[] { new Item("Aged Brie", 0, 5) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(6, app.items[0].quality);	
+    }    
 }
